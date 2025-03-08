@@ -1,0 +1,167 @@
+body{
+    font-family: 'Times New Roman', Times, serif;
+    margin: 0;
+    padding: 0;
+    background-color: white; /* Light Gray Background*/
+    color: black;
+    padding: 10px   ;
+    margin: auto;
+    border-width: 4px;
+    max-width: 1200px;
+}
+.containerResume{
+    background-color: lightcyan; /* Light Gray Background*/
+    border: darkblue solid;
+    border-width: 4px;
+    padding: 5px
+}
+.mainInfo{
+    text-align: center;
+    margin: 0;
+}
+.contactInfo img{ 
+   width: 24px;
+   height: 24px; 
+   vertical-align: middle;
+} 
+.contactInfoTable img{
+    width: 24px;
+   height: 24px;
+   vertical-align: middle;
+   padding: 0 5px;
+}
+.contactInfoTable .rB{
+    border-right: black solid;
+    padding: 0 5px;
+    vertical-align: middle;
+}
+.contactInfoTable{
+ width: 100%;   
+}
+h2{
+    color: #007bff; /* Blue Headings */
+}
+h2{
+    margin: 0 2px;
+    padding: 0 2px;
+}
+h3,h4{
+    margin: 1px;
+    padding: 1px;
+}
+.education h3,h4{
+  /*  position: relative;  Extra Step needed for Yash's WORKING Solution */
+  margin: 1px;
+  padding: 1px;
+} 
+.education .eduYear,.eduGrade{
+   /*position: absolute; right: 0; /* Yash's WORKING solution with extra step above */
+    float: right;  /*chatgpt 1 - WORKING */
+ /* display: flex; justify-content: space-between; align-items: center; --chatgpt 2 - NOT Working */
+ /* text-align: right --chatgpt 3 - NOT working; */
+}
+.emailLink, .viewDegree,.linkedinLink,.njitUrl{
+text-decoration: none;
+}
+.education h3::before{
+content: "\25C6";
+color: black;
+font-size: 1.2em;
+}
+.education h4::before{
+    padding-left: 1em;
+    padding-right: 5px;
+    content: "\27A4";
+    color: gray;
+    font-size: 1.2em;
+}
+.education .viewDegree{
+    font-size: small;
+    padding-left: 10px;
+}
+/* .workExp h3,h4{
+    margin: 1px;
+    padding: 1px;
+} */
+.workExp h3::before{
+    content: "\25C6";
+    color: black;
+    font-size: 1.2em;
+}
+.workExp h4 {
+    display: flex;
+    align-items: center;
+}
+.workExp h4.roleName::before{
+    padding-left: 1em;
+    padding-right: 5px;
+    content: "\27A4";
+    color: gray;
+    font-size: 1.2em;
+}
+.workExp h4.clientName::before{
+    padding-left: 1.25em;
+    padding-right: 5px;
+    content: "\25A0";
+    color: gray;
+    font-size: 1.2em;
+}
+.workExp h4.achievements::before{
+    padding-left: 1.5em;
+    padding-right: 5px;
+    content: "\2043";
+    color: gray;
+    font-size: 1.2em;
+}
+.workExp .expYear{
+    float: right; /*same as eduYear*/
+}
+.workExp .duties{
+    padding: 2px;
+    margin: 0 2.5em;
+}
+ .workExp .achievementsList{
+    padding: 2px;
+    margin: 0 27px;
+}
+ul.achievementsList{
+    list-style: none;
+}
+/* ul.achievementsList li{
+    position: relative;
+} */
+ul.achievementsList li::before{
+    content: "\25E6";
+    margin-right: 8px;
+    /* position: absolute; */
+    left: 5px;
+}
+.extraCurricular .extraCurricular1{
+    padding: 2px;
+    margin: 0 27px;
+}
+
+/* TO BE REMOVED LATER - START
+td{
+    border: pink solid;
+}
+p{
+    border: green dotted;
+}
+h1,h2{
+    border: yellow solid;
+}
+h3{
+    border: white solid;
+    margin: 0;
+}
+h4{
+    border: palevioletred solid;
+}
+.emailLink,.njitUrl{
+    border: purple solid;
+}
+div{
+    border: black solid;
+}
+/* TO BE REMOVED LATER - STOP*/
